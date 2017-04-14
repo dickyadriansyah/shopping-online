@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+        
+        <definition name="user.base.template"
+		template="/WEB-INF/jsp/templates/templateUser.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+        
+	<definition name="home.index" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/home/index.jsp" />
+	</definition>
+        
+        <definition name="about.index" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/about/index.jsp" />
+	</definition>
+        
+        <definition name="cart.index" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/cart/index.jsp" />
+	</definition>
+        
+        <definition name="cart.thanks" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/cart/thanks.jsp" />
+	</definition>
+        
+        <definition name="account.myaccount" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/account/myaccount.jsp" />
+	</definition>
+        
+        <definition name="account.register" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/account/register.jsp" />
+	</definition>
+        
+        <definition name="account.welcome" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/account/welcome.jsp" />
+	</definition>
+        
+        <definition name="product.list" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/product/list.jsp" />
+	</definition>
+        
+        <definition name="product.kategori" extends="user.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/user/product/kategori.jsp" />
+	</definition>
+        
+</tiles-definitions>
