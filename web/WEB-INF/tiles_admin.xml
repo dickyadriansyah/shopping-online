@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+        
+        <definition name="admin.base.template"
+		template="/WEB-INF/jsp/templates/templateAdmin.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+        
+	<definition name="admin.kategori.index" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/kategori/index.jsp" />
+	</definition>
+        
+        <definition name="admin.kategori.add" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/kategori/add.jsp" />
+	</definition>
+        
+        <definition name="admin.kategori.edit" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/kategori/edit.jsp" />
+	</definition>
+        
+        <definition name="admin.product.index" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/product/index.jsp" />
+	</definition>
+        
+        <definition name="admin.product.add" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/product/add.jsp" />
+	</definition>
+        
+        <definition name="admin.product.edit" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/product/edit.jsp" />
+	</definition>
+        
+        <definition name="admin.main.login" template="/WEB-INF/jsp/templates/templateEmpty.jsp">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/login.jsp" />
+	</definition>
+        
+        <definition name="admin.main.403" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/403.jsp" />
+	</definition>
+        
+        <definition name="admin.main.welcome" extends="admin.base.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/admin/welcome.jsp" />
+	</definition>
+        
+</tiles-definitions>
